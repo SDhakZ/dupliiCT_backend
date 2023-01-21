@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "box_shadows",
+  "info": {
+    "singularName": "box-shadow",
+    "pluralName": "box-shadows",
+    "displayName": "box-shadow",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "author": {
+      "type": "string"
+    },
+    "boxShadow": {
+      "type": "text"
+    },
+    "boxShadowID": {
+      "type": "uid"
+    }
+  }
+}
