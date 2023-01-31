@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trend_collections",
+  "info": {
+    "singularName": "trend-collection",
+    "pluralName": "trend-collections",
+    "displayName": "TrendCollection",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "trend_title": {
+      "type": "string"
+    },
+    "trend_id": {
+      "type": "uid",
+      "required": true
+    },
+    "trend_author": {
+      "type": "string"
+    },
+    "trend_publishedDate": {
+      "type": "date"
+    },
+    "trend_cardImg": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "trend_brief": {
+      "type": "text",
+      "required": true
+    },
+    "trend_desc": {
+      "type": "richtext"
+    },
+    "trend_authorImg": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "trend_slug": {
+      "type": "uid",
+      "targetField": "trend_title",
+      "required": true
+    },
+    "trend_tags": {
+      "type": "string"
+    }
+  }
+}

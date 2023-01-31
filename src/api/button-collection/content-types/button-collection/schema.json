@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "button_collections",
+  "info": {
+    "singularName": "button-collection",
+    "pluralName": "button-collections",
+    "displayName": "ButtonCollection",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "element_id": {
+      "type": "uid",
+      "required": true
+    },
+    "element_component": {
+      "type": "component",
+      "repeatable": false,
+      "component": "showcase.element-showcase"
+    },
+    "element_title": {
+      "type": "string",
+      "required": true
+    },
+    "element_slug": {
+      "type": "uid",
+      "targetField": "element_title",
+      "required": true
+    },
+    "element_imgs": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "element_tags": {
+      "type": "string"
+    }
+  }
+}

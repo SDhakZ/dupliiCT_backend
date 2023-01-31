@@ -12,13 +12,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "author": {
+    "boxShadow_author": {
       "type": "string"
     },
-    "boxShadow": {
+    "boxShadow_value": {
       "type": "text"
     },
-    "boxShadowID": {
+    "boxShadow_id": {
       "type": "uid"
     }
   }

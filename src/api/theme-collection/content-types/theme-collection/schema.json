@@ -1,0 +1,71 @@
+{
+  "kind": "collectionType",
+  "collectionName": "theme_collections",
+  "info": {
+    "singularName": "theme-collection",
+    "pluralName": "theme-collections",
+    "displayName": "ThemeCollection",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "theme_id": {
+      "type": "uid"
+    },
+    "theme_cardImg": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "theme_title": {
+      "type": "string"
+    },
+    "theme_author": {
+      "type": "string"
+    },
+    "theme_colorHex": {
+      "type": "string",
+      "required": true
+    },
+    "theme_slug": {
+      "type": "uid",
+      "targetField": "theme_title",
+      "required": true
+    },
+    "color_desc": {
+      "type": "text"
+    },
+    "theme_fontUsedDesc": {
+      "type": "richtext"
+    },
+    "theme_brief": {
+      "type": "text"
+    },
+    "theme_elementUsedDesc": {
+      "type": "richtext"
+    },
+    "theme_morePreviewImgs": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "theme_tags": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_showcase_element_showcases",
+  "info": {
+    "displayName": "ElementShowcase",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "element_brief": {
+      "type": "text"
+    },
+    "element_codePenLink": {
+      "type": "string",
+      "required": true
+    },
+    "element_altStyleDesc": {
+      "type": "richtext"
+    },
+    "element_author": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "text_effect_collections",
+  "info": {
+    "singularName": "text-effect-collection",
+    "pluralName": "text-effect-collections",
+    "displayName": "TextEffectCollection",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "element_title": {
+      "type": "string"
+    },
+    "element_id": {
+      "type": "uid",
+      "required": true
+    },
+    "element_imgs": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    },
+    "element_component": {
+      "type": "component",
+      "repeatable": false,
+      "component": "showcase.element-showcase"
+    },
+    "element_slug": {
+      "type": "uid",
+      "targetField": "element_title"
+    }
+  }
+}

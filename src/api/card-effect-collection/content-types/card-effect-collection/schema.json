@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "card_effect_collections",
+  "info": {
+    "singularName": "card-effect-collection",
+    "pluralName": "card-effect-collections",
+    "displayName": "CardEffectCollection",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "element_title": {
+      "type": "string",
+      "required": true
+    },
+    "element_id": {
+      "type": "uid"
+    },
+    "element_imgs": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "element_component": {
+      "type": "component",
+      "repeatable": false,
+      "component": "showcase.element-showcase"
+    },
+    "element_slug": {
+      "type": "uid",
+      "targetField": "element_title"
+    }
+  }
+}
