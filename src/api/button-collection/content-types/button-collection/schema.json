@@ -31,18 +31,14 @@
       "required": true
     },
     "element_imgs": {
-      "type": "media",
-      "multiple": true,
-      "required": true,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ]
-    },
-    "element_tags": {
-      "type": "string"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }

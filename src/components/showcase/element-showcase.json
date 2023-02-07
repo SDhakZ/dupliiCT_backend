@@ -18,6 +18,9 @@
     },
     "element_author": {
       "type": "string"
+    },
+    "element_tags": {
+      "type": "string"
     }
   }
 }
