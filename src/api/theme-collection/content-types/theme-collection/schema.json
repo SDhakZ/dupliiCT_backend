@@ -12,9 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "theme_id": {
-      "type": "uid"
-    },
     "theme_cardImg": {
       "type": "media",
       "multiple": false,
@@ -66,6 +63,12 @@
     },
     "theme_tags": {
       "type": "string"
+    },
+    "theme_order": {
+      "type": "integer",
+      "required": true,
+      "unique": false,
+      "min": 0
     }
   }
 }
