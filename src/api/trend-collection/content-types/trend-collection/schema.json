@@ -15,10 +15,6 @@
     "trend_title": {
       "type": "string"
     },
-    "trend_id": {
-      "type": "uid",
-      "required": true
-    },
     "trend_author": {
       "type": "string"
     },
@@ -61,6 +57,12 @@
     },
     "trend_tags": {
       "type": "string"
+    },
+    "trend_order": {
+      "unique": false,
+      "required": false,
+      "type": "integer",
+      "min": 0
     }
   }
 }

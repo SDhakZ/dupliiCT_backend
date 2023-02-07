@@ -15,20 +15,16 @@
     "element_title": {
       "type": "string"
     },
-    "element_id": {
-      "type": "uid",
-      "required": true
-    },
     "element_imgs": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true,
-      "required": true
+      ]
     },
     "element_component": {
       "type": "component",
@@ -38,6 +34,11 @@
     "element_slug": {
       "type": "uid",
       "targetField": "element_title"
+    },
+    "element_order": {
+      "type": "integer",
+      "required": true,
+      "min": 0
     }
   }
 }

@@ -16,9 +16,6 @@
       "type": "string",
       "required": true
     },
-    "element_id": {
-      "type": "uid"
-    },
     "element_imgs": {
       "type": "media",
       "multiple": true,
@@ -38,6 +35,11 @@
     "element_slug": {
       "type": "uid",
       "targetField": "element_title"
+    },
+    "element_order": {
+      "type": "integer",
+      "min": 0,
+      "required": true
     }
   }
 }
