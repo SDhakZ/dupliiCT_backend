@@ -1,9 +1,9 @@
-'use strict';
+"use strict";
 
 /**
  * box-shadow controller
  */
 
-const { createCoreController } = require('@strapi/strapi').factories;
+const { createCoreController } = require("@strapi/strapi").factories;
 
-module.exports = createCoreController('api::box-shadow.box-shadow');
+module.exports = createCoreController("api::box-shadow.box-shadow");
