@@ -19,7 +19,9 @@
       "type": "text"
     },
     "boxShadow_id": {
-      "type": "uid"
+      "type": "integer",
+      "required": false,
+      "unique": true
     }
   }
 }
