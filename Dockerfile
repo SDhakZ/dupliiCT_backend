@@ -1,4 +1,4 @@
-FROM node:12-alpine
+FROM node:14-alpine
 
 ENV PORT 1338
 ENV HOST 0.0.0.0
@@ -9,12 +9,11 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
 # INSTALL DEPS
-COPY package*.json /urs/src/app/
-COPY yarn.lock /urs/src/app/
-RUN yarn INSTALL
+COPY package*.json /usr/src/app/
+RUN npm install
 COPY . /usr/src/app
 
-RUN yarn build
+RUN npm run build
 EXPOSE 1338
 
-CMD ["yarn","start"]
+CMD ["npm","start"]
