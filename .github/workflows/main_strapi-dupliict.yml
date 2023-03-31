@@ -23,14 +23,14 @@ jobs:
       uses: docker/login-action@v1
       with:
         registry: https://index.docker.io/v1/
-        username: ${{ secrets.AzureAppService_ContainerUsername_9786e9531fab4b36b180ec47e151525d }}
-        password: ${{ secrets.AzureAppService_ContainerPassword_02e1482d425641cb872fd6cd9e8fe531 }}
+        username: ${{ secrets.AzureAppService_ContainerUsername_4d32a64bb5884804a1571a1038fa3242 }}
+        password: ${{ secrets.AzureAppService_ContainerPassword_88783ea3084d42dbae9f8f3f5fe201bc }}
 
     - name: Build and push container image to registry
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_9786e9531fab4b36b180ec47e151525d }}/sdhakz/dupliict:${{ github.sha }}
+        tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_4d32a64bb5884804a1571a1038fa3242 }}/sdhakz/dupliict:${{ github.sha }}
         file: ./Dockerfile
 
   deploy:
@@ -47,5 +47,5 @@ jobs:
       with:
         app-name: 'strapi-dupliict'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_40aa97443ba44b25aef65659a004a836 }}
-        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_9786e9531fab4b36b180ec47e151525d }}/sdhakz/dupliict:${{ github.sha }}'
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_cd81d1aa5fbc49199103bd3f4e1dc466 }}
+        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_4d32a64bb5884804a1571a1038fa3242 }}/sdhakz/dupliict:${{ github.sha }}'
