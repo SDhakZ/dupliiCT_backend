@@ -24,10 +24,12 @@
       ]
     },
     "theme_title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "theme_author": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "theme_colorHex": {
       "type": "string",
@@ -39,16 +41,20 @@
       "required": true
     },
     "color_desc": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "theme_fontUsedDesc": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
     "theme_brief": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "theme_elementUsedDesc": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
     "theme_morePreviewImgs": {
       "type": "media",
@@ -62,12 +68,13 @@
       ]
     },
     "theme_tags": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "theme_order": {
       "type": "integer",
       "required": true,
-      "unique": false,
+      "unique": true,
       "min": 0
     }
   }

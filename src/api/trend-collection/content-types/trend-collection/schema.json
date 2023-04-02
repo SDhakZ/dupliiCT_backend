@@ -13,13 +13,16 @@
   "pluginOptions": {},
   "attributes": {
     "trend_title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "trend_author": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "trend_publishedDate": {
-      "type": "date"
+      "type": "date",
+      "required": true
     },
     "trend_cardImg": {
       "type": "media",
@@ -37,7 +40,8 @@
       "required": true
     },
     "trend_desc": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
     "trend_authorImg": {
       "type": "media",
@@ -56,11 +60,12 @@
       "required": true
     },
     "trend_tags": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "trend_order": {
-      "unique": false,
-      "required": false,
+      "unique": true,
+      "required": true,
       "type": "integer",
       "min": 0
     }

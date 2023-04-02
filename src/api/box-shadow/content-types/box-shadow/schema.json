@@ -13,14 +13,16 @@
   "pluginOptions": {},
   "attributes": {
     "boxShadow_author": {
-      "type": "string"
+      "type": "string",
+      "required": false
     },
     "boxShadow_value": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "boxShadow_id": {
       "type": "integer",
-      "required": false,
+      "required": true,
       "unique": true
     }
   }
